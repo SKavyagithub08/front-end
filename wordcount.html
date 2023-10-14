@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #container {
+            margin: 60px;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Word Count Calculator</h1>
+        <textarea id="inputText" rows="4" cols="50" placeholder="Enter your sentence here..."></textarea>
+        <br>
+        <button onclick="countWords()">Count Words</button>
+        <p id="wordCount">Word count: <span id="count">0</span></p>
+    </div>
+    <script>
+        function countWords() {
+            const inputText = document.getElementById("inputText").value;
+            const words = inputText.trim().split(/\s+/);
+            const wordCount = words.length;
+            document.getElementById("count").textContent = wordCount;
+        }
+    </script>
+</body>
+</html>
