@@ -1,0 +1,62 @@
+/* Apply styles to the container */
+.container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #D6D6D6;
+    border-radius: 10px;
+}
+
+/* Style the title */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style the input field */
+#box {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the "Add" button */
+input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style list items */
+li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Add a little animation when removing list items */
+li:active {
+    transform: scale(0.95);
+    transition: transform 0.2s;
+}
